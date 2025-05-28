@@ -10,9 +10,12 @@ Use of this information, code, or scripts provided is at your own risk. Readers 
 
 ## Description
 
-This repository demonstrates how to use Windows Performance Toolkit to see what processes are writing to the hard drive.
+This repository demonstrates how to use microsoft tools to see what processes are writing to the hard drive.
 
-## Requirements
+- [Windows Performance Toolkit](#windows-performance-toolkit-requirements)
+- [Process Explorer](#process-explorer-requirements)
+
+## Windows Performance Toolkit Requirements
 
 - Windows 10 or later
 - Admin privileges
@@ -90,3 +93,35 @@ You can delete `.etl` files after analysis. They may be large depending on trace
 ## Uninstall
 
 Windows Performance Analyzer can be uninstalled using the standard "Add remove programs" and uninstalling the "Windows Assessment and Deployment Kit" (may also be under Windows Performance Toolkit).
+
+## Process Explorer Requirements
+
+- Windows 10 or later
+- Admin privileges
+- Process Explorer
+
+## Step 1: Install Process Explorer
+
+1. Download the **Process Explorer zip file**:
+
+   [https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer#download](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer#download)
+
+2. Extract the zip file to a suitable location and run procexp.exe
+
+   ![Extract and Run](./docs/images/pex-extract-run.png)
+
+## Step 2: Setup Process Explorer
+
+1. Right click the "Description" column, then "Select Columns..."
+
+   ![Select Columns](./docs/images/pex-select-columns.png)
+
+2. Ensure that Process Disk > Write Bytes is selected
+
+   ![Write Bytes](./docs/images/pex-select-write-bytes.png)
+
+## Step 3: Analyze using the view.
+
+Use the view to see the processes writing to the hard drive
+
+![Analyze Columns](./docs/images/pex-column.png)
