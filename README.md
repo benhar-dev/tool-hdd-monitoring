@@ -12,8 +12,27 @@ Use of this information, code, or scripts provided is at your own risk. Readers 
 
 This repository demonstrates how to use microsoft tools to see what processes are writing to the hard drive.
 
+- [Resource Monitor (resmon.exe)][#resource-monitor-requirements]
 - [Windows Performance Toolkit](#windows-performance-toolkit-requirements)
 - [Process Explorer](#process-explorer-requirements)
+
+## Resource Monitor Requirements
+
+- Windows 10 or later
+
+## Step 1:
+
+- Run resmon.exe from the Windows start menu
+
+## Step 2:
+
+- Change to the Disk Tab, and observe the disk activity by process and file name.
+
+![resmon](./docs/images/resmon.png)
+
+## Step 3:
+
+- Identify the files with the highest WriteB/S
 
 ## Windows Performance Toolkit Requirements
 
