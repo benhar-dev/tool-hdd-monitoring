@@ -12,7 +12,7 @@ Use of this information, code, or scripts provided is at your own risk. Readers 
 
 This repository demonstrates how to use microsoft tools to see what processes are writing to the hard drive.
 
-- [Resource Monitor (resmon.exe)][#resource-monitor-requirements]
+- [Resource Monitor (resmon.exe)](#resource-monitor-requirements)
 - [Windows Performance Toolkit](#windows-performance-toolkit-requirements)
 - [Process Explorer](#process-explorer-requirements)
 
